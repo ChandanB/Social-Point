@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F8816101EA52D3D004E9613 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F88160F1EA52D3D004E9613 /* AppDelegate.swift */; };
+		1F8816121EA52D3D004E9613 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8816111EA52D3D004E9613 /* ViewController.swift */; };
+		1F8816151EA52D3D004E9613 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F8816131EA52D3D004E9613 /* Main.storyboard */; };
+		1F8816171EA52D3D004E9613 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F8816161EA52D3D004E9613 /* Assets.xcassets */; };
+		1F88161A1EA52D3D004E9613 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F8816181EA52D3D004E9613 /* LaunchScreen.storyboard */; };
+		9597BDC9979AF8294C4749FE /* Pods_Social_Point.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867451792CDD4DF5C0C6A99E /* Pods_Social_Point.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00DC89F2345453F928135F67 /* Pods-Social Point.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social Point.release.xcconfig"; path = "Pods/Target Support Files/Pods-Social Point/Pods-Social Point.release.xcconfig"; sourceTree = "<group>"; };
+		1F88160C1EA52D3D004E9613 /* Social Point.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Social Point.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F88160F1EA52D3D004E9613 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1F8816111EA52D3D004E9613 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1F8816141EA52D3D004E9613 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F8816161EA52D3D004E9613 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F8816191EA52D3D004E9613 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F88161B1EA52D3D004E9613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		867451792CDD4DF5C0C6A99E /* Pods_Social_Point.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Social_Point.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99839A2B8E297181D8888227 /* Pods-Social Point.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social Point.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Social Point/Pods-Social Point.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F8816091EA52D3D004E9613 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9597BDC9979AF8294C4749FE /* Pods_Social_Point.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F8816031EA52D3D004E9613 = {
+			isa = PBXGroup;
+			children = (
+				1F88160E1EA52D3D004E9613 /* Social Point */,
+				1F88160D1EA52D3D004E9613 /* Products */,
+				8994EF64D0F5A83D160893AB /* Pods */,
+				6721C96A8B884DD9D2D3972F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1F88160D1EA52D3D004E9613 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F88160C1EA52D3D004E9613 /* Social Point.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F88160E1EA52D3D004E9613 /* Social Point */ = {
+			isa = PBXGroup;
+			children = (
+				1F88160F1EA52D3D004E9613 /* AppDelegate.swift */,
+				1F8816111EA52D3D004E9613 /* ViewController.swift */,
+				1F8816131EA52D3D004E9613 /* Main.storyboard */,
+				1F8816161EA52D3D004E9613 /* Assets.xcassets */,
+				1F8816181EA52D3D004E9613 /* LaunchScreen.storyboard */,
+				1F88161B1EA52D3D004E9613 /* Info.plist */,
+			);
+			path = "Social Point";
+			sourceTree = "<group>";
+		};
+		6721C96A8B884DD9D2D3972F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				867451792CDD4DF5C0C6A99E /* Pods_Social_Point.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8994EF64D0F5A83D160893AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99839A2B8E297181D8888227 /* Pods-Social Point.debug.xcconfig */,
+				00DC89F2345453F928135F67 /* Pods-Social Point.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F88160B1EA52D3D004E9613 /* Social Point */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F88161E1EA52D3D004E9613 /* Build configuration list for PBXNativeTarget "Social Point" */;
+			buildPhases = (
+				92B6019C5F2AF1EE20588D03 /* [CP] Check Pods Manifest.lock */,
+				1F8816081EA52D3D004E9613 /* Sources */,
+				1F8816091EA52D3D004E9613 /* Frameworks */,
+				1F88160A1EA52D3D004E9613 /* Resources */,
+				82D86B01E2745E17FC242137 /* [CP] Embed Pods Frameworks */,
+				8758AAEE536A5B505401A1E4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Social Point";
+			productName = "Social Point";
+			productReference = 1F88160C1EA52D3D004E9613 /* Social Point.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F8816041EA52D3D004E9613 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Chandan B";
+				TargetAttributes = {
+					1F88160B1EA52D3D004E9613 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 485WZNYRT6;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1F8816071EA52D3D004E9613 /* Build configuration list for PBXProject "Social Point" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F8816031EA52D3D004E9613;
+			productRefGroup = 1F88160D1EA52D3D004E9613 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F88160B1EA52D3D004E9613 /* Social Point */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F88160A1EA52D3D004E9613 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F88161A1EA52D3D004E9613 /* LaunchScreen.storyboard in Resources */,
+				1F8816171EA52D3D004E9613 /* Assets.xcassets in Resources */,
+				1F8816151EA52D3D004E9613 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		82D86B01E2745E17FC242137 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Social Point/Pods-Social Point-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8758AAEE536A5B505401A1E4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Social Point/Pods-Social Point-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92B6019C5F2AF1EE20588D03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F8816081EA52D3D004E9613 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F8816121EA52D3D004E9613 /* ViewController.swift in Sources */,
+				1F8816101EA52D3D004E9613 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1F8816131EA52D3D004E9613 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F8816141EA52D3D004E9613 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F8816181EA52D3D004E9613 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F8816191EA52D3D004E9613 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F88161C1EA52D3D004E9613 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1F88161D1EA52D3D004E9613 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F88161F1EA52D3D004E9613 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99839A2B8E297181D8888227 /* Pods-Social Point.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 485WZNYRT6;
+				INFOPLIST_FILE = "Social Point/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TurnApp.Social-Point";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1F8816201EA52D3D004E9613 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00DC89F2345453F928135F67 /* Pods-Social Point.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 485WZNYRT6;
+				INFOPLIST_FILE = "Social Point/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TurnApp.Social-Point";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F8816071EA52D3D004E9613 /* Build configuration list for PBXProject "Social Point" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F88161C1EA52D3D004E9613 /* Debug */,
+				1F88161D1EA52D3D004E9613 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F88161E1EA52D3D004E9613 /* Build configuration list for PBXNativeTarget "Social Point" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F88161F1EA52D3D004E9613 /* Debug */,
+				1F8816201EA52D3D004E9613 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F8816041EA52D3D004E9613 /* Project object */;
+}
