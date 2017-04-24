@@ -6,6 +6,29 @@ target 'Social Point' do
   use_frameworks!
 
   # Pods for Social Point
+  pod 'Onboard'
+  
+  pod 'Koloda'
+  
+  pod 'SwiftyJSON'
+  
+  pod 'Fabric'
+  pod 'TwitterKit'
+  
   pod 'Firebase'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Core'
+  pod 'Firebase/Crash'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Database'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Messaging'
+  pod 'Firebase/AppIndexing'
+  pod 'Firebase/DynamicLinks'
+  pod 'Firebase/RemoteConfig'
+ 
+  pod 'FBSDKCoreKit'
+  pod 'FBSDKShareKit'
+  pod 'FBSDKLoginKit'
 
 end

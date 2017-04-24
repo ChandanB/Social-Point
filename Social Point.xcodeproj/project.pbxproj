@@ -7,23 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F11A4661EA7D043000424D8 /* DeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F11A4651EA7D043000424D8 /* DeckViewController.swift */; };
+		1F11A4681EA7D365000424D8 /* SocialCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F11A4671EA7D365000424D8 /* SocialCard.swift */; };
 		1F8816101EA52D3D004E9613 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F88160F1EA52D3D004E9613 /* AppDelegate.swift */; };
-		1F8816121EA52D3D004E9613 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8816111EA52D3D004E9613 /* ViewController.swift */; };
+		1F8816121EA52D3D004E9613 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8816111EA52D3D004E9613 /* LoginViewController.swift */; };
 		1F8816151EA52D3D004E9613 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F8816131EA52D3D004E9613 /* Main.storyboard */; };
 		1F8816171EA52D3D004E9613 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F8816161EA52D3D004E9613 /* Assets.xcassets */; };
 		1F88161A1EA52D3D004E9613 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F8816181EA52D3D004E9613 /* LaunchScreen.storyboard */; };
+		1F8816221EA53DEE004E9613 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8816211EA53DEE004E9613 /* Extensions.swift */; };
+		1F8816241EA53F93004E9613 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8816231EA53F93004E9613 /* User.swift */; };
+		1F88162B1EA54117004E9613 /* LoginExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F88162A1EA54117004E9613 /* LoginExtensions.swift */; };
+		1F88162D1EA54421004E9613 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F88162C1EA54421004E9613 /* GoogleService-Info.plist */; };
 		9597BDC9979AF8294C4749FE /* Pods_Social_Point.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867451792CDD4DF5C0C6A99E /* Pods_Social_Point.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		00DC89F2345453F928135F67 /* Pods-Social Point.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social Point.release.xcconfig"; path = "Pods/Target Support Files/Pods-Social Point/Pods-Social Point.release.xcconfig"; sourceTree = "<group>"; };
+		1F11A4651EA7D043000424D8 /* DeckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckViewController.swift; sourceTree = "<group>"; };
+		1F11A4671EA7D365000424D8 /* SocialCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialCard.swift; sourceTree = "<group>"; };
 		1F88160C1EA52D3D004E9613 /* Social Point.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Social Point.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F88160F1EA52D3D004E9613 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1F8816111EA52D3D004E9613 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1F8816111EA52D3D004E9613 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1F8816141EA52D3D004E9613 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F8816161EA52D3D004E9613 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F8816191EA52D3D004E9613 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F88161B1EA52D3D004E9613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F8816211EA53DEE004E9613 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		1F8816231EA53F93004E9613 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1F88162A1EA54117004E9613 /* LoginExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginExtensions.swift; sourceTree = "<group>"; };
+		1F88162C1EA54421004E9613 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		867451792CDD4DF5C0C6A99E /* Pods_Social_Point.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Social_Point.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99839A2B8E297181D8888227 /* Pods-Social Point.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social Point.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Social Point/Pods-Social Point.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -44,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				1F88160E1EA52D3D004E9613 /* Social Point */,
+				1F8816281EA53FD1004E9613 /* Assets, Plist, Delegate */,
 				1F88160D1EA52D3D004E9613 /* Products */,
 				8994EF64D0F5A83D160893AB /* Pods */,
 				6721C96A8B884DD9D2D3972F /* Frameworks */,
@@ -61,14 +74,60 @@
 		1F88160E1EA52D3D004E9613 /* Social Point */ = {
 			isa = PBXGroup;
 			children = (
-				1F88160F1EA52D3D004E9613 /* AppDelegate.swift */,
-				1F8816111EA52D3D004E9613 /* ViewController.swift */,
-				1F8816131EA52D3D004E9613 /* Main.storyboard */,
-				1F8816161EA52D3D004E9613 /* Assets.xcassets */,
-				1F8816181EA52D3D004E9613 /* LaunchScreen.storyboard */,
-				1F88161B1EA52D3D004E9613 /* Info.plist */,
+				1F8816251EA53F9B004E9613 /* View Controllers */,
+				1F8816291EA53FE6004E9613 /* Models */,
+				1F8816271EA53FBF004E9613 /* Extensions */,
+				1F8816261EA53FA9004E9613 /* Storyboards */,
 			);
 			path = "Social Point";
+			sourceTree = "<group>";
+		};
+		1F8816251EA53F9B004E9613 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1F11A4651EA7D043000424D8 /* DeckViewController.swift */,
+				1F8816111EA52D3D004E9613 /* LoginViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		1F8816261EA53FA9004E9613 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1F8816131EA52D3D004E9613 /* Main.storyboard */,
+				1F8816181EA52D3D004E9613 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		1F8816271EA53FBF004E9613 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1F88162A1EA54117004E9613 /* LoginExtensions.swift */,
+				1F8816211EA53DEE004E9613 /* Extensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		1F8816281EA53FD1004E9613 /* Assets, Plist, Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				1F88160F1EA52D3D004E9613 /* AppDelegate.swift */,
+				1F88161B1EA52D3D004E9613 /* Info.plist */,
+				1F8816161EA52D3D004E9613 /* Assets.xcassets */,
+				1F88162C1EA54421004E9613 /* GoogleService-Info.plist */,
+			);
+			name = "Assets, Plist, Delegate";
+			path = "Social Point";
+			sourceTree = "<group>";
+		};
+		1F8816291EA53FE6004E9613 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1F8816231EA53F93004E9613 /* User.swift */,
+				1F11A4671EA7D365000424D8 /* SocialCard.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		6721C96A8B884DD9D2D3972F /* Frameworks */ = {
@@ -101,6 +160,7 @@
 				1F88160A1EA52D3D004E9613 /* Resources */,
 				82D86B01E2745E17FC242137 /* [CP] Embed Pods Frameworks */,
 				8758AAEE536A5B505401A1E4 /* [CP] Copy Pods Resources */,
+				1F88162E1EA54733004E9613 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -154,12 +214,27 @@
 				1F88161A1EA52D3D004E9613 /* LaunchScreen.storyboard in Resources */,
 				1F8816171EA52D3D004E9613 /* Assets.xcassets in Resources */,
 				1F8816151EA52D3D004E9613 /* Main.storyboard in Resources */,
+				1F88162D1EA54421004E9613 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1F88162E1EA54733004E9613 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 0410f83817be596697801db0c53bb1afa01f6e6f 9b9a58743f38c99b79b13c58932c180d9d8825908a50d83d55fe6450f2767a37";
+			showEnvVarsInLog = 0;
+		};
 		82D86B01E2745E17FC242137 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -212,8 +287,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F8816121EA52D3D004E9613 /* ViewController.swift in Sources */,
+				1F88162B1EA54117004E9613 /* LoginExtensions.swift in Sources */,
+				1F8816241EA53F93004E9613 /* User.swift in Sources */,
+				1F11A4681EA7D365000424D8 /* SocialCard.swift in Sources */,
+				1F8816121EA52D3D004E9613 /* LoginViewController.swift in Sources */,
+				1F8816221EA53DEE004E9613 /* Extensions.swift in Sources */,
 				1F8816101EA52D3D004E9613 /* AppDelegate.swift in Sources */,
+				1F11A4661EA7D043000424D8 /* DeckViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +457,7 @@
 				1F8816201EA52D3D004E9613 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
