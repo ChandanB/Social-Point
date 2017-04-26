@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>EZSwiftExtensions.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Eureka.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FBSDKCoreKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -34,12 +44,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Koloda.xcscheme</key>
+		<key>InteractiveSideMenu.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Onboard.xcscheme</key>
+		<key>Koloda.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -59,6 +69,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>paper-onboarding.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>pop.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -67,7 +82,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>09364D07138794106087C58670C7492D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>20151774CE2F5FA6B8126D4F5ED1C5FE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>436DD5906B4E1B432C3F41AB48B014DF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -77,17 +102,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>484D9E1ED3E63928E0A59CD4957087FB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>4AB8CD89DC9502FA9D355543C3C2C7F7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>6C5B5DF74A12DBD6E235C974BFD170DF</key>
+		<key>675A114988AE198732ED4AD726408964</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -97,7 +112,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8F5682E0AC126B1910FC04BA8A16F382</key>
+		<key>76EC8D04F744A6D37048DF405710168F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -122,7 +137,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>C3F9752233A838E767236AFB182BB7AB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DA4CFEBC7883D4CE7E6AE34914B98587</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>E396A93E4C79B22B7816E9F02F62ECED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E9B5984027CE24F36C2BC8CE464D875C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

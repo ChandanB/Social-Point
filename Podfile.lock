@@ -5,6 +5,8 @@ PODS:
   - Bolts/AppLinks (1.8.4):
     - Bolts/Tasks
   - Bolts/Tasks (1.8.4)
+  - Eureka (2.0.1)
+  - EZSwiftExtensions (1.9)
   - Fabric (1.6.11)
   - FBSDKCoreKit (4.21.0):
     - Bolts (~> 1.7)
@@ -91,9 +93,10 @@ PODS:
     - GoogleToolboxForMac/NSString+URLArguments (= 2.1.1)
   - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
   - GTMSessionFetcher/Core (1.1.9)
+  - InteractiveSideMenu (1.0)
   - Koloda (4.0):
     - pop (~> 1.0)
-  - Onboard (2.3.1)
+  - paper-onboarding (2.0.1)
   - pop (1.0.9)
   - Protobuf (3.2.0)
   - SwiftyJSON (3.1.4)
@@ -103,6 +106,8 @@ PODS:
     - TwitterCore (>= 2.8)
 
 DEPENDENCIES:
+  - Eureka
+  - EZSwiftExtensions
   - Fabric
   - FBSDKCoreKit
   - FBSDKLoginKit
@@ -118,13 +123,16 @@ DEPENDENCIES:
   - Firebase/Messaging
   - Firebase/RemoteConfig
   - Firebase/Storage
+  - InteractiveSideMenu
   - Koloda
-  - Onboard
+  - paper-onboarding (~> 2.0.1)
   - SwiftyJSON
   - TwitterKit
 
 SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  Eureka: ae837bb1dfae0c07bc1bda7aeef87876eeb537c2
+  EZSwiftExtensions: ce22bf6fc5c6e7c883fec413300b006e123735d0
   Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
   FBSDKCoreKit: 8a372ab194b5c7c26355c1920ef52dbeb44bc222
   FBSDKLoginKit: a1a5f4b4ac445823a020fbeeaf5f03714a67ff9c
@@ -143,14 +151,15 @@ SPEC CHECKSUMS:
   FirebaseStorage: a5c55b23741a49a72af8f30f95b3bb5ddbeda12d
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 5c046c76a1f859bc9c187e918f18e4fc7bb57b5e
+  InteractiveSideMenu: 2966af15dee760f6c3e09a7a80a98c09fed3d7a4
   Koloda: cb171633afc6182a77821b7951e38b2cb272ba7c
-  Onboard: b6871f25ac753175b2ab9a362fb2feb26a81a311
+  paper-onboarding: a8e001214d9ce9decf78e160b3823f396dbd51ac
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   Protobuf: 745f59e122e5de98d4d7ef291e264a0eef80f58e
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   TwitterCore: e959987be23c767004d29eb7fab8d85d8585a2e5
   TwitterKit: 3b6044a7320340326a4098f3e37aa1dbaeb94942
 
-PODFILE CHECKSUM: cc9b6d5726501effdbf190cfc76936627d28687d
+PODFILE CHECKSUM: 9745b5737e54cd7d8ae7829fe8e4e0400b07ed8c
 
 COCOAPODS: 1.2.1

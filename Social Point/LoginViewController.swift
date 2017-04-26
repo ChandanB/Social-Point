@@ -10,8 +10,9 @@ import UIKit
 import FBSDKLoginKit
 import TwitterKit
 import Firebase
+import paper_onboarding
 
-class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
+class LoginViewController: UIViewController, FBSDKLoginButtonDelegate{
     
     //Create Users Social Card At Login
     var socialCard = SocialCard()
@@ -26,18 +27,70 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     var profileImageView = UIImageView()
     
     var twitterSession: TWTRSession?
+    var twitterButton: TWTRLogInButton?
+    var facebookLoginButton: FBSDKLoginButton?
+    
+    var continueButton: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitleColor(.white, for: .normal)
+        button.backgroundColor = .black
+        button.layer.cornerRadius = 6
+        return button
+    }()
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let onboarding = PaperOnboarding(itemsCount: 3)
+        onboarding.dataSource = self
+        onboarding.delegate = self
+        onboarding.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(onboarding)
+        
+        // add constraints
+        for attribute: NSLayoutAttribute in [.left, .right, .top, .bottom] {
+            let constraint = NSLayoutConstraint(item: onboarding,
+                                                attribute: attribute,
+                                                relatedBy: .equal,
+                                                toItem: view,
+                                                attribute: attribute,
+                                                multiplier: 1,
+                                                constant: 0)
+            view.addConstraint(constraint)
+        }
+        
         //Load Facebook Button into view
-        setupFacebookButton()
+        //   setupFacebookButton()
         
         //Load Twitter Button into view
         setupTwitterButton()
     }
     
+    func setupContinueButton() {
+        view.addSubview(continueButton)
+        continueButton.setTitle("Continue", for: .normal)
+        continueButton.widthAnchor.constraint(equalToConstant: 90).isActive = true
+        continueButton.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        continueButton.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 100).isActive = true
+        continueButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 240).isActive = true
+    }
+    
+    func setupFacebookButton() {
+        facebookLoginButton = FBSDKLoginButton()
+        view.addSubview(facebookLoginButton!)
+        facebookLoginButton?.frame = CGRect(x: 16, y: view.frame.midY - 40, width: view.frame.width - 32, height: 50)
+        facebookLoginButton?.delegate = self
+        facebookLoginButton?.readPermissions = ["email", "public_profile", "user_friends"]
+        facebookLoginButton?.isHidden = false
+    }
+    
     fileprivate func setupTwitterButton() {
-        let twitterButton = TWTRLogInButton { (session, error) in
+        twitterButton = TWTRLogInButton { (session, error) in
             self.twitterSession = session
             guard let token = session?.authToken else { return }
             guard let secret = session?.authTokenSecret else { return }
@@ -57,30 +110,8 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
                 })
             }
         }
-        view.addSubview(twitterButton)
-        twitterButton.frame = CGRect(x: 16, y: 116, width: view.frame.width - 32, height: 50)
-    }
-    
-    func setupFacebookButton() {
-        let facebookLoginButton = FBSDKLoginButton()
-        view.addSubview(facebookLoginButton)
-        facebookLoginButton.frame = CGRect(x: 16, y: 50, width: view.frame.width - 32, height: 50)
-        facebookLoginButton.delegate = self
-        facebookLoginButton.readPermissions = ["email", "public_profile", "user_friends"]
-    }
-    
-    func fetchUser() {
-        guard let uid = FIRAuth.auth()?.currentUser?.uid else {
-            //for some reason uid = nil
-            return
-        }
-        
-        FIRDatabase.database().reference().child("users").child(uid).observeSingleEvent(of: .value, with: { (snapshot) in
-            if let dictionary = snapshot.value as? [String: AnyObject] {
-                self.user = User(dictionary: dictionary)
-                print("user successfully made with dictionary")
-            }
-        }, withCancel: nil)
+        view.addSubview(twitterButton!)
+        twitterButton?.frame = CGRect(x: 16, y: view.frame.midY - 40, width: view.frame.width - 32, height: 50)
     }
     
     func createSocialCard() {
@@ -112,6 +143,52 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     }
 }
 
+extension LoginViewController: PaperOnboardingDataSource, PaperOnboardingDelegate {
+    
+    func onboardingWillTransitonToIndex(_ index: Int) {
+        if index == 0 {
+            view.addSubview(twitterButton!)
+            continueButton.removeFromSuperview()
+            facebookLoginButton?.removeFromSuperview()
+        }
+        
+        if index == 1 {
+            twitterButton?.removeFromSuperview()
+            continueButton.removeFromSuperview()
+            setupFacebookButton()
+        }
+        
+        if index >= 2 {
+            facebookLoginButton?.removeFromSuperview()
+            setupContinueButton()
+        }
+    }
+    
+    func onboardingDidTransitonToIndex(_ index: Int) {
+    }
+    
+    func onboardingConfigurationItem(_ item: OnboardingContentViewItem, index: Int) {
+    }
+    
+    func onboardingItemAtIndex(_ index: Int) -> OnboardingItemInfo {
+        let font = UIFont (name: "AppleColorEmoji", size: 20)
+        let titleFont = UIFont(name: "AmericanTypewriter-Bold", size: 24)
+        let white = UIColor.white
+        let black = UIColor.black
+        let fbBlue = UIColor.rgb(59, green: 89, blue: 152)
+        let twtrBlue = UIColor.rgb(0, green: 132, blue: 180)
+        
+        return [
+            ("Twitter Bird Blue", "Sign In With Twitter", "The more followers you have will increase Social Point", "Twitter Circle", white, twtrBlue, twtrBlue, titleFont, font),
+            ("Facebook F", "Sign In With Facebook", "The more friends you have will increase your Social Point", "Facebook Circle", white, fbBlue, fbBlue, titleFont, font),
+            ("Demo Card", "A Unique Card", "We will give you a card based on your Social Point Score", "Black Deck", white, black, black, titleFont, font)
+            ][index] as! OnboardingItemInfo
+    }
+    
+    func onboardingItemsCount() -> Int {
+        return 3
+    }
+}
 
 extension LoginViewController {
     func getDataFromUrl(url: URL, completion: @escaping (_ data: Data?, _  response: URLResponse?, _ error: Error?) -> Void) {

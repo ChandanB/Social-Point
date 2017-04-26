@@ -134,6 +134,7 @@ extension LoginViewController: UIImagePickerControllerDelegate, UINavigationCont
             }
             
             print("Successfully created a Firebase-Twitter user: ", user?.uid ?? "")
+            
             user?.link(with: credential) { (user, error) in
                 FIRAuth.auth()?.signIn(with: credential) { (user, error) in
                     if error != nil {
@@ -238,7 +239,6 @@ extension LoginViewController: UIImagePickerControllerDelegate, UINavigationCont
             }
             
             self.handleFacebookRegister(email: user.email!, name: user.name!, profileImageUrl: user.profileImageUrl!, uid: user.id!, gender: user.gender!, friends: user.followersCount!)
-            
             self.updateUser()
         }
     }

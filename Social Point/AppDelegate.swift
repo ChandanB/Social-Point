@@ -37,10 +37,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
         UIApplication.shared.statusBarStyle = .lightContent
         
-        let statusBar: UIView = UIApplication.shared.value(forKey: "statusBar") as! UIView
-        if statusBar.responds(to: #selector(setter: UIView.backgroundColor)) {
-            statusBar.backgroundColor = UIColor.rgbLessAlpha(0, green: 0, blue: 0)
-        }
         let statusBarBackgroundView = UIView()
         window?.addSubview(statusBarBackgroundView)
         window?.addConstraintsWithFormat("H:|[v0]|", views: statusBarBackgroundView)
@@ -75,7 +71,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         FIRAuth.auth()?.addStateDidChangeListener { auth, user in
             if user != nil {
-                self.window!.rootViewController = LoginViewController()
+                self.window!.rootViewController = HomeViewController()
                 self.window!.makeKeyAndVisible()
             } else {
                 self.window!.rootViewController = LoginViewController()

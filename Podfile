@@ -6,7 +6,13 @@ target 'Social Point' do
   use_frameworks!
 
   # Pods for Social Point
-  pod 'Onboard'
+  pod 'Eureka'
+  
+  pod 'InteractiveSideMenu'
+
+  pod 'EZSwiftExtensions'
+  
+  pod 'paper-onboarding', '~> 2.0.1'
   
   pod 'Koloda'
   
