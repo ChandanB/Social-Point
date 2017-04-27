@@ -15,7 +15,7 @@ import paper_onboarding
 class LoginViewController: UIViewController, FBSDKLoginButtonDelegate{
     
     //Create Users Social Card At Login
-    var socialCard = SocialCard()
+    var socialCard = SocialCard(dictionary: [:])
     
     //Create User using dictionary values
     var user = User(dictionary: [:])
@@ -43,7 +43,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate{
     }()
     
     func goToProfileSetup() {
-        let setupView = HomeViewController()
+        let setupView = ProfileControllerCard()
         setupView.user = self.user
         self.present(setupView, animated: true, completion: nil)
     }
@@ -131,7 +131,6 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate{
         }
         socialCard.name = user.name
         socialCard.followersCount = user.followersCount
-        socialCard.profileImage = profileImageView.image
     }
     
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {

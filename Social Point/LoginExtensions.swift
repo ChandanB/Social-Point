@@ -125,6 +125,7 @@ extension LoginViewController: UIImagePickerControllerDelegate, UINavigationCont
             }
             
             print("Successfully created a Firebase-Twitter user: ", user?.uid ?? "")
+            self.getTwitterFollowers()
             if prevUser != nil {
                 user?.link(with: credential) { (user, error) in
                     FIRAuth.auth()?.signIn(with: credential) { (user, error) in

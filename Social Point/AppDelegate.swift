@@ -72,19 +72,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         if FIRAuth.auth()?.currentUser != nil {
             self.fetchUser()
-            
+           
             let profileViewController = ProfileViewController()
-            let homeViewController = HomeViewController()
             profileViewController.user = self.user
-            homeViewController.user = self.user
-            let nav1 = UINavigationController()
             
+            let nav1 = UINavigationController()
             nav1.viewControllers = [profileViewController]
             self.window!.rootViewController = nav1
             self.window?.makeKeyAndVisible()
+            
         } else {
+            
             self.window!.rootViewController = LoginViewController()
         }
+        
         self.window!.makeKeyAndVisible()
     }
     

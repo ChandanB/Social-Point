@@ -15,15 +15,38 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
     var viewController = ProfileControllerCard()
     
     var user: User?
+    var socialCard: SocialCard?
 
     override func viewDidAppear(_ animated: Bool) {
         fetchUser()
+       // createNewCard()
+    }
+    
+    func createNewCard() {
+        let ref = FIRDatabase.database().reference().child("cards")
+        let childRef = ref.childByAutoId()
+        let fromId = FIRAuth.auth()!.currentUser!.uid
+        let timestamp = NSNumber(value: Int(Date().timeIntervalSince1970))
+        
+        let values: [String: AnyObject] = ["fromId": fromId as AnyObject, "timestamp": timestamp, "name": user?.name as AnyObject, "bio": user?.bio as AnyObject, "location": user?.location as AnyObject]
+        
+        //append properties dictionary onto values somehow??
+        //key $0, value $1
+        
+        childRef.updateChildValues(values) { (error, ref) in
+            if error != nil {
+                print(error as Any)
+                return
+            }
+            let userMessagesRef = FIRDatabase.database().reference().child("user-cards").child(fromId)
+            userMessagesRef.updateChildValues(values)
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         addChildViewController(viewController)
-        view.backgroundColor = .black
+        view.backgroundColor = .darkGray
         setupViewControllerView()
     }
     

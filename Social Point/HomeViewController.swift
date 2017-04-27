@@ -16,6 +16,7 @@ class HomeViewController: FormViewController {
     var user: User?
     var bio: String?
     var location: String?
+    var count = 0
     
     var continueButton: UIButton = {
         let button = UIButton()
@@ -96,9 +97,11 @@ class HomeViewController: FormViewController {
                 print(err as Any)
                 return
             }
+            
             self.user = User(dictionary: values)
             let vc = ProfileViewController()
             vc.user = self.user
+            
             self.navigationController?.popViewController(animated: true)
         }
     }
