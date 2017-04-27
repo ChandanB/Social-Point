@@ -26,6 +26,8 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate{
     //Create ImageView to download profileImageinto
     var profileImageView = UIImageView()
     
+    var twtrCredential: FIRAuthCredential?
+    
     var twitterSession: TWTRSession?
     var twitterButton: TWTRLogInButton?
     var facebookLoginButton: FBSDKLoginButton?
@@ -36,8 +38,15 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate{
         button.setTitleColor(.white, for: .normal)
         button.backgroundColor = .black
         button.layer.cornerRadius = 6
+        button.addTarget(self, action: #selector(LoginViewController.goToProfileSetup), for: .touchUpInside)
         return button
     }()
+    
+    func goToProfileSetup() {
+        let setupView = HomeViewController()
+        setupView.user = self.user
+        self.present(setupView, animated: true, completion: nil)
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -65,7 +74,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate{
         }
         
         //Load Facebook Button into view
-        //   setupFacebookButton()
+        // setupFacebookButton()
         
         //Load Twitter Button into view
         setupTwitterButton()
@@ -95,8 +104,8 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate{
             guard let token = session?.authToken else { return }
             guard let secret = session?.authTokenSecret else { return }
             let credentials = FIRTwitterAuthProvider.credential(withToken: token, secret: secret)
+            self.twtrCredential = credentials
             let prevUser = FIRAuth.auth()?.currentUser
-            
             if prevUser != nil {
                 self.linkFacebook()
             } else {
@@ -110,6 +119,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate{
                 })
             }
         }
+        
         view.addSubview(twitterButton!)
         twitterButton?.frame = CGRect(x: 16, y: view.frame.midY - 40, width: view.frame.width - 32, height: 50)
     }

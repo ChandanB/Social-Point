@@ -28,8 +28,6 @@ extension LoginViewController: UIImagePickerControllerDelegate, UINavigationCont
             }
             self.user = User(dictionary: values as [String : AnyObject])
             self.registerUserIntoDatabaseWithUID(uid: id!, values: values as [String : AnyObject])
-            
-            self.dismiss(animated: true, completion: nil)
         })
     }
     
@@ -47,7 +45,6 @@ extension LoginViewController: UIImagePickerControllerDelegate, UINavigationCont
             }
             
             self.user = User(dictionary: values as [String : AnyObject])
-            self.dismiss(animated: true, completion: nil)
         })
     }
     
@@ -63,37 +60,26 @@ extension LoginViewController: UIImagePickerControllerDelegate, UINavigationCont
             }
             
             self.user = User(dictionary: values)
-            self.dismiss(animated: true, completion: nil)
         })
     }
-
+    
     func showEmailAddress() {
         let accessToken = FBSDKAccessToken.current()
         guard let accessTokenString = accessToken?.tokenString else { return }
         let credentials = FIRFacebookAuthProvider.credential(withAccessToken: accessTokenString)
-        let prevUser = FIRAuth.auth()?.currentUser
-        if prevUser != nil {
-            linkTwitter()
-        } else {
-            FIRAuth.auth()?.signIn(with: credentials, completion: { (user, error) in
-                if error != nil {
-                    print("Something went wrong with our FB user: ", error ?? "")
-                    return
-                }
-                print("Successfully logged in with our user: ", user ?? "")
-                self.getFacebookFriends()
-            })
-        }
+        linkTwitter()
     }
     
     func linkTwitter() {
-        let accessToken = FBSDKAccessToken.current()
         let session = self.twitterSession
+        guard let token = session?.authToken else { return }
+        guard let secret = session?.authTokenSecret else { return }
+        let credential = FIRTwitterAuthProvider.credential(withToken: token, secret: secret)
+        
+        let accessToken = FBSDKAccessToken.current()
         guard let accessTokenString = accessToken?.tokenString else { return }
-        let token  = session?.authToken
-        let secret = session?.authTokenSecret
         let credentials = FIRFacebookAuthProvider.credential(withAccessToken: accessTokenString)
-        let credential = FIRTwitterAuthProvider.credential(withToken: token!, secret: secret!)
+        let prevUser = FIRAuth.auth()?.currentUser
         
         FIRAuth.auth()?.signIn(with: credentials, completion: { (user, error) in
             if let err = error {
@@ -101,11 +87,15 @@ extension LoginViewController: UIImagePickerControllerDelegate, UINavigationCont
             }
             
             print("Successfully created a Firebase-Twitter user: ", user?.uid ?? "")
-            self.getFacebookFriends()
-            user?.link(with: credential) { (user, error) in
-                FIRAuth.auth()?.signIn(with: credential) { (user, error) in
-                    if error != nil {
-                        return
+            
+            if prevUser != nil {
+                user?.link(with: credential) { (user, error) in
+                    FIRAuth.auth()?.signIn(with: credential) { (user, error) in
+                        if error != nil {
+                            return
+                        }
+                        // Merge prevUser and currentUser accounts and data
+                        self.getFacebookFriends()
                     }
                 }
             }
@@ -116,8 +106,9 @@ extension LoginViewController: UIImagePickerControllerDelegate, UINavigationCont
         let session = self.twitterSession
         guard let token = session?.authToken else { return }
         guard let secret = session?.authTokenSecret else { return }
-        let credentials = FIRTwitterAuthProvider.credential(withToken: token, secret: secret)        
+        let credentials = FIRTwitterAuthProvider.credential(withToken: token, secret: secret)
         let credential = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
+        let prevUser = FIRAuth.auth()?.currentUser
         
         FIRAuth.auth()?.signIn(with: credentials, completion: { (user, error) in
             if let err = error {
@@ -134,19 +125,30 @@ extension LoginViewController: UIImagePickerControllerDelegate, UINavigationCont
             }
             
             print("Successfully created a Firebase-Twitter user: ", user?.uid ?? "")
-            
-            user?.link(with: credential) { (user, error) in
-                FIRAuth.auth()?.signIn(with: credential) { (user, error) in
-                    if error != nil {
-                        return
+            if prevUser != nil {
+                user?.link(with: credential) { (user, error) in
+                    FIRAuth.auth()?.signIn(with: credential) { (user, error) in
+                        if error != nil {
+                            return
+                        }
+                        // Merge prevUser and currentUser accounts and data
+                        self.getTwitterFollowers()
                     }
-                    // Merge prevUser and currentUser accounts and data
-                    self.getTwitterFollowers()
                 }
+            }
+            
+            if let unwrappedSession = session {
+                let alert = UIAlertController(title: "Logged In",
+                                              message: "User \(unwrappedSession.userName) has logged in",
+                    preferredStyle: UIAlertControllerStyle.alert
+                )
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+                return
             }
         })
     }
-
+    
     
     func getTwitterFollowers() {
         let user = self.user

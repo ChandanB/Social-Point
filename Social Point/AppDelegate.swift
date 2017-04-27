@@ -17,6 +17,7 @@ import Intents
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
+    var user = User(dictionary: [:])
     
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
         let handled: Bool = FBSDKApplicationDelegate.sharedInstance().application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
@@ -32,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         checkIfUserIsLoggedIn()
         
         Fabric.with([Twitter.self])
-
+        
         UINavigationBar.appearance().shadowImage = UIImage()
         UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
         UIApplication.shared.statusBarStyle = .lightContent
@@ -69,15 +70,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func checkIfUserIsLoggedIn() {
         window = UIWindow(frame: UIScreen.main.bounds)
-        FIRAuth.auth()?.addStateDidChangeListener { auth, user in
-            if user != nil {
-                self.window!.rootViewController = HomeViewController()
-                self.window!.makeKeyAndVisible()
-            } else {
-                self.window!.rootViewController = LoginViewController()
-                self.window!.makeKeyAndVisible()
-            }
+        if FIRAuth.auth()?.currentUser != nil {
+            self.fetchUser()
+            
+            let profileViewController = ProfileViewController()
+            let homeViewController = HomeViewController()
+            profileViewController.user = self.user
+            homeViewController.user = self.user
+            let nav1 = UINavigationController()
+            
+            nav1.viewControllers = [profileViewController]
+            self.window!.rootViewController = nav1
+            self.window?.makeKeyAndVisible()
+        } else {
+            self.window!.rootViewController = LoginViewController()
         }
+        self.window!.makeKeyAndVisible()
+    }
+    
+    func fetchUser() {
+        guard let uid = FIRAuth.auth()?.currentUser?.uid else {
+            //for some reason uid = nil
+            return
+        }
+        
+        FIRDatabase.database().reference().child("users").child(uid).observeSingleEvent(of: .value, with: { (snapshot) in
+            if let dictionary = snapshot.value as? [String: AnyObject] {
+                self.user = User(dictionary: dictionary)
+                print("user successfully made on app delegate")
+            }
+        }, withCancel: nil)
     }
 }
 

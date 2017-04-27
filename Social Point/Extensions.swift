@@ -40,6 +40,8 @@ extension UIColor {
             return nil
         }
     }
+    
+    
 }
 
 extension UIView {
@@ -61,6 +63,11 @@ extension UIView {
         
         blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight] // for supporting device rotation
         self.addSubview(blurEffectView)
+    }
+    
+    func addBurnEffect() {
+        let ctx = UIGraphicsGetCurrentContext()
+        let burnEffect = ctx!.setBlendMode(CGBlendMode.colorBurn)
     }
     
     func addLightBlurEffect() {
@@ -164,6 +171,20 @@ extension UIImageView {
             })
             
         }).resume()
+    }
+}
+
+extension UIImage {
+    public convenience init?(color: UIColor, size: CGSize = CGSize(width: 1, height: 1)) {
+        let rect = CGRect(origin: .zero, size: size)
+        UIGraphicsBeginImageContextWithOptions(rect.size, false, 0.0)
+        color.setFill()
+        UIRectFill(rect)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        guard let cgImage = image?.cgImage else { return nil }
+        self.init(cgImage: cgImage)
     }
 }
 

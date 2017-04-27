@@ -10,73 +10,8 @@
 		1F11A4661EA7D043000424D8 /* DeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F11A4651EA7D043000424D8 /* DeckViewController.swift */; };
 		1F11A4681EA7D365000424D8 /* SocialCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F11A4671EA7D365000424D8 /* SocialCard.swift */; };
 		1F12EBBF1EB03DE300A0D735 /* ProfileViewControllerExpanse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12EBBE1EB03DE300A0D735 /* ProfileViewControllerExpanse.swift */; };
-		1F12EBC41EB045E100A0D735 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12EBC21EB045E100A0D735 /* CardCollectionViewCell.swift */; };
-		1F12EBC51EB045E100A0D735 /* CardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EBC31EB045E100A0D735 /* CardCollectionViewCell.xib */; };
-		1F12EBCA1EB148D400A0D735 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12EBC91EB148D400A0D735 /* SetupViewController.swift */; };
-		1F12EC181EB1497C00A0D735 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12EBCD1EB1497C00A0D735 /* AppDelegate.swift */; };
-		1F12EC191EB1497C00A0D735 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EBCE1EB1497C00A0D735 /* Assets.xcassets */; };
-		1F12EC1A1EB1497C00A0D735 /* EurekaSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EBCF1EB1497C00A0D735 /* EurekaSectionHeader.xib */; };
-		1F12EC1B1EB1497C00A0D735 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EBD11EB1497C00A0D735 /* LaunchScreen.storyboard */; };
-		1F12EC1C1EB1497C00A0D735 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EBD31EB1497C00A0D735 /* Main.storyboard */; };
-		1F12EC1D1EB1497C00A0D735 /* WeekDaysCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EBD51EB1497C00A0D735 /* WeekDaysCell.xib */; };
-		1F12EC1E1EB1497C00A0D735 /* CustomCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12EBD71EB1497C00A0D735 /* CustomCells.swift */; };
-		1F12EC1F1EB1497C00A0D735 /* DatePickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EBD91EB1497C00A0D735 /* DatePickerCell.xib */; };
-		1F12EC201EB1497C00A0D735 /* SwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EBDA1EB1497C00A0D735 /* SwitchCell.xib */; };
-		1F12EC211EB1497C00A0D735 /* TextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EBDB1EB1497C00A0D735 /* TextCell.xib */; };
-		1F12EC221EB1497C00A0D735 /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12EBDE1EB1497C00A0D735 /* ImagePickerController.swift */; };
-		1F12EC231EB1497C00A0D735 /* ImageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12EBDF1EB1497C00A0D735 /* ImageRow.swift */; };
-		1F12EC241EB1497C00A0D735 /* FloatLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12EBE11EB1497C00A0D735 /* FloatLabelTextField.swift */; };
-		1F12EC251EB1497C00A0D735 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EBE21EB1497C00A0D735 /* Info.plist */; };
-		1F12EC261EB1497C00A0D735 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12EBE31EB1497C00A0D735 /* SetupViewController.swift */; };
-		1F12EC271EB1497C00A0D735 /* CatalogFieldRows.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EBE51EB1497C00A0D735 /* CatalogFieldRows.jpg */; };
-		1F12EC281EB1497C00A0D735 /* EurekaAlertRow.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EBE61EB1497C00A0D735 /* EurekaAlertRow.gif */; };
-		1F12EC291EB1497C00A0D735 /* EurekaCustomCellDisabled.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EBE71EB1497C00A0D735 /* EurekaCustomCellDisabled.gif */; };
-		1F12EC2A1EB1497C00A0D735 /* EurekaCustomCells.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EBE81EB1497C00A0D735 /* EurekaCustomCells.gif */; };
-		1F12EC2B1EB1497C00A0D735 /* EurekaCustomRow.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EBE91EB1497C00A0D735 /* EurekaCustomRow.gif */; };
-		1F12EC2C1EB1497C00A0D735 /* EurekaExample1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EBEA1EB1497C00A0D735 /* EurekaExample1.gif */; };
-		1F12EC2D1EB1497C00A0D735 /* EurekaExample2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EBEB1EB1497C00A0D735 /* EurekaExample2.gif */; };
-		1F12EC2E1EB1497C00A0D735 /* EurekaExample3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EBEC1EB1497C00A0D735 /* EurekaExample3.gif */; };
-		1F12EC2F1EB1497C00A0D735 /* EurekaHidden.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EBED1EB1497C00A0D735 /* EurekaHidden.gif */; };
-		1F12EC301EB1497C00A0D735 /* EurekaHowTo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EBEE1EB1497C00A0D735 /* EurekaHowTo.gif */; };
-		1F12EC311EB1497C00A0D735 /* EurekaLocationRow.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EBEF1EB1497C00A0D735 /* EurekaLocationRow.gif */; };
-		1F12EC321EB1497C00A0D735 /* EurekaMultivalued.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EBF01EB1497C00A0D735 /* EurekaMultivalued.gif */; };
-		1F12EC331EB1497C00A0D735 /* EurekaNavigation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EBF11EB1497C00A0D735 /* EurekaNavigation.gif */; };
-		1F12EC341EB1497C00A0D735 /* EurekaOnChange.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EBF21EB1497C00A0D735 /* EurekaOnChange.gif */; };
-		1F12EC351EB1497C00A0D735 /* EurekaRows.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EBF31EB1497C00A0D735 /* EurekaRows.gif */; };
-		1F12EC361EB1497C00A0D735 /* EurekaSegmentedRow.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EBF41EB1497C00A0D735 /* EurekaSegmentedRow.gif */; };
-		1F12EC371EB1497C00A0D735 /* EurekaSwitchSections.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EBF51EB1497C00A0D735 /* EurekaSwitchSections.gif */; };
-		1F12EC381EB1497C00A0D735 /* EurekaCountDownInlineRow.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EBF71EB1497C00A0D735 /* EurekaCountDownInlineRow.gif */; };
-		1F12EC391EB1497C00A0D735 /* EurekaCountDownPickerRow.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EBF81EB1497C00A0D735 /* EurekaCountDownPickerRow.gif */; };
-		1F12EC3A1EB1497C00A0D735 /* EurekaCountDownRow.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EBF91EB1497C00A0D735 /* EurekaCountDownRow.gif */; };
-		1F12EC3B1EB1497C00A0D735 /* EurekaDateInlineRow.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EBFA1EB1497C00A0D735 /* EurekaDateInlineRow.gif */; };
-		1F12EC3C1EB1497C00A0D735 /* EurekaDatePickerRow.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EBFB1EB1497C00A0D735 /* EurekaDatePickerRow.gif */; };
-		1F12EC3D1EB1497C00A0D735 /* EurekaDateRow.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EBFC1EB1497C00A0D735 /* EurekaDateRow.gif */; };
-		1F12EC3E1EB1497C00A0D735 /* EurekaDateTimeInlineRow.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EBFD1EB1497C00A0D735 /* EurekaDateTimeInlineRow.gif */; };
-		1F12EC3F1EB1497C00A0D735 /* EurekaDateTimePickerRow.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EBFE1EB1497C00A0D735 /* EurekaDateTimePickerRow.gif */; };
-		1F12EC401EB1497C00A0D735 /* EurekaDateTimeRow.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EBFF1EB1497C00A0D735 /* EurekaDateTimeRow.gif */; };
-		1F12EC411EB1497C00A0D735 /* EurekaTimeInlineRow.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EC001EB1497C00A0D735 /* EurekaTimeInlineRow.gif */; };
-		1F12EC421EB1497C00A0D735 /* EurekaTimePickerRow.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EC011EB1497C00A0D735 /* EurekaTimePickerRow.gif */; };
-		1F12EC431EB1497C00A0D735 /* EurekaTimeRow.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EC021EB1497C00A0D735 /* EurekaTimeRow.gif */; };
-		1F12EC441EB1497C00A0D735 /* ActionSheetRow.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EC041EB1497C00A0D735 /* ActionSheetRow.jpeg */; };
-		1F12EC451EB1497C00A0D735 /* AlertRow.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EC051EB1497C00A0D735 /* AlertRow.jpeg */; };
-		1F12EC461EB1497C00A0D735 /* ButtonRow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EC061EB1497C00A0D735 /* ButtonRow.png */; };
-		1F12EC471EB1497C00A0D735 /* CheckRow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EC071EB1497C00A0D735 /* CheckRow.png */; };
-		1F12EC481EB1497C00A0D735 /* ImageRow.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EC081EB1497C00A0D735 /* ImageRow.jpeg */; };
-		1F12EC491EB1497C00A0D735 /* LabelRow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EC091EB1497C00A0D735 /* LabelRow.png */; };
-		1F12EC4A1EB1497C00A0D735 /* MultipleSelectorRow.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EC0A1EB1497C00A0D735 /* MultipleSelectorRow.jpeg */; };
-		1F12EC4B1EB1497C00A0D735 /* PickerRow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EC0B1EB1497C00A0D735 /* PickerRow.png */; };
-		1F12EC4C1EB1497C00A0D735 /* PictureRow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EC0C1EB1497C00A0D735 /* PictureRow.png */; };
-		1F12EC4D1EB1497C00A0D735 /* PostalAddressRow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EC0D1EB1497C00A0D735 /* PostalAddressRow.png */; };
-		1F12EC4E1EB1497C00A0D735 /* PushRow.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EC0E1EB1497C00A0D735 /* PushRow.jpeg */; };
-		1F12EC4F1EB1497C00A0D735 /* SegmentedRow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EC0F1EB1497C00A0D735 /* SegmentedRow.png */; };
-		1F12EC501EB1497C00A0D735 /* SegmentedRowWithTitle.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EC101EB1497C00A0D735 /* SegmentedRowWithTitle.png */; };
-		1F12EC511EB1497C00A0D735 /* SliderRow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EC111EB1497C00A0D735 /* SliderRow.png */; };
-		1F12EC521EB1497C00A0D735 /* StepperRow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EC121EB1497C00A0D735 /* StepperRow.png */; };
-		1F12EC531EB1497C00A0D735 /* SwitchRow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EC131EB1497C00A0D735 /* SwitchRow.png */; };
-		1F12EC541EB1497C00A0D735 /* TextAreaRow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EC141EB1497C00A0D735 /* TextAreaRow.png */; };
-		1F12EC551EB1497C00A0D735 /* FieldRowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12EC161EB1497C00A0D735 /* FieldRowUITests.swift */; };
-		1F12EC561EB1497C00A0D735 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F12EC171EB1497C00A0D735 /* Info.plist */; };
-		1F12EC591EB1498600A0D735 /* FloatLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12EC581EB1498600A0D735 /* FloatLabelTextField.swift */; };
+		1F12EC5D1EB14D9B00A0D735 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12EC5C1EB14D9B00A0D735 /* HomeViewController.swift */; };
+		1F12EC5F1EB153E300A0D735 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12EC5E1EB153E300A0D735 /* CustomCell.swift */; };
 		1F80109C1EAF39F700F8BBD3 /* ProfileControllerCardExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8010981EAF39F700F8BBD3 /* ProfileControllerCardExt.swift */; };
 		1F80109D1EAF39F700F8BBD3 /* ProfileControllerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8010991EAF39F700F8BBD3 /* ProfileControllerCard.swift */; };
 		1F8816101EA52D3D004E9613 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F88160F1EA52D3D004E9613 /* AppDelegate.swift */; };
@@ -95,76 +30,11 @@
 		00DC89F2345453F928135F67 /* Pods-Social Point.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social Point.release.xcconfig"; path = "Pods/Target Support Files/Pods-Social Point/Pods-Social Point.release.xcconfig"; sourceTree = "<group>"; };
 		1F11A4651EA7D043000424D8 /* DeckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckViewController.swift; sourceTree = "<group>"; };
 		1F11A4671EA7D365000424D8 /* SocialCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialCard.swift; sourceTree = "<group>"; };
-		1F12EBBE1EB03DE300A0D735 /* ProfileViewControllerExpanse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewControllerExpanse.swift; path = "../../../Social Point Folder/Social Point/Social Point/ProfileViewControllerExpanse.swift"; sourceTree = "<group>"; };
-		1F12EBC21EB045E100A0D735 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
-		1F12EBC31EB045E100A0D735 /* CardCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardCollectionViewCell.xib; sourceTree = "<group>"; };
-		1F12EBC91EB148D400A0D735 /* SetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
-		1F12EBCD1EB1497C00A0D735 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1F12EBCE1EB1497C00A0D735 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1F12EBD01EB1497C00A0D735 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/EurekaSectionHeader.xib; sourceTree = "<group>"; };
-		1F12EBD21EB1497C00A0D735 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1F12EBD41EB1497C00A0D735 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1F12EBD61EB1497C00A0D735 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/WeekDaysCell.xib; sourceTree = "<group>"; };
-		1F12EBD71EB1497C00A0D735 /* CustomCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCells.swift; sourceTree = "<group>"; };
-		1F12EBD91EB1497C00A0D735 /* DatePickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePickerCell.xib; sourceTree = "<group>"; };
-		1F12EBDA1EB1497C00A0D735 /* SwitchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwitchCell.xib; sourceTree = "<group>"; };
-		1F12EBDB1EB1497C00A0D735 /* TextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextCell.xib; sourceTree = "<group>"; };
-		1F12EBDE1EB1497C00A0D735 /* ImagePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerController.swift; sourceTree = "<group>"; };
-		1F12EBDF1EB1497C00A0D735 /* ImageRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRow.swift; sourceTree = "<group>"; };
-		1F12EBE11EB1497C00A0D735 /* FloatLabelTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatLabelTextField.swift; sourceTree = "<group>"; };
-		1F12EBE21EB1497C00A0D735 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1F12EBE31EB1497C00A0D735 /* SetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
-		1F12EBE51EB1497C00A0D735 /* CatalogFieldRows.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CatalogFieldRows.jpg; sourceTree = "<group>"; };
-		1F12EBE61EB1497C00A0D735 /* EurekaAlertRow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaAlertRow.gif; sourceTree = "<group>"; };
-		1F12EBE71EB1497C00A0D735 /* EurekaCustomCellDisabled.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaCustomCellDisabled.gif; sourceTree = "<group>"; };
-		1F12EBE81EB1497C00A0D735 /* EurekaCustomCells.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaCustomCells.gif; sourceTree = "<group>"; };
-		1F12EBE91EB1497C00A0D735 /* EurekaCustomRow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaCustomRow.gif; sourceTree = "<group>"; };
-		1F12EBEA1EB1497C00A0D735 /* EurekaExample1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaExample1.gif; sourceTree = "<group>"; };
-		1F12EBEB1EB1497C00A0D735 /* EurekaExample2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaExample2.gif; sourceTree = "<group>"; };
-		1F12EBEC1EB1497C00A0D735 /* EurekaExample3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaExample3.gif; sourceTree = "<group>"; };
-		1F12EBED1EB1497C00A0D735 /* EurekaHidden.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaHidden.gif; sourceTree = "<group>"; };
-		1F12EBEE1EB1497C00A0D735 /* EurekaHowTo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaHowTo.gif; sourceTree = "<group>"; };
-		1F12EBEF1EB1497C00A0D735 /* EurekaLocationRow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaLocationRow.gif; sourceTree = "<group>"; };
-		1F12EBF01EB1497C00A0D735 /* EurekaMultivalued.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaMultivalued.gif; sourceTree = "<group>"; };
-		1F12EBF11EB1497C00A0D735 /* EurekaNavigation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaNavigation.gif; sourceTree = "<group>"; };
-		1F12EBF21EB1497C00A0D735 /* EurekaOnChange.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaOnChange.gif; sourceTree = "<group>"; };
-		1F12EBF31EB1497C00A0D735 /* EurekaRows.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaRows.gif; sourceTree = "<group>"; };
-		1F12EBF41EB1497C00A0D735 /* EurekaSegmentedRow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaSegmentedRow.gif; sourceTree = "<group>"; };
-		1F12EBF51EB1497C00A0D735 /* EurekaSwitchSections.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaSwitchSections.gif; sourceTree = "<group>"; };
-		1F12EBF71EB1497C00A0D735 /* EurekaCountDownInlineRow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaCountDownInlineRow.gif; sourceTree = "<group>"; };
-		1F12EBF81EB1497C00A0D735 /* EurekaCountDownPickerRow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaCountDownPickerRow.gif; sourceTree = "<group>"; };
-		1F12EBF91EB1497C00A0D735 /* EurekaCountDownRow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaCountDownRow.gif; sourceTree = "<group>"; };
-		1F12EBFA1EB1497C00A0D735 /* EurekaDateInlineRow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaDateInlineRow.gif; sourceTree = "<group>"; };
-		1F12EBFB1EB1497C00A0D735 /* EurekaDatePickerRow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaDatePickerRow.gif; sourceTree = "<group>"; };
-		1F12EBFC1EB1497C00A0D735 /* EurekaDateRow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaDateRow.gif; sourceTree = "<group>"; };
-		1F12EBFD1EB1497C00A0D735 /* EurekaDateTimeInlineRow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaDateTimeInlineRow.gif; sourceTree = "<group>"; };
-		1F12EBFE1EB1497C00A0D735 /* EurekaDateTimePickerRow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaDateTimePickerRow.gif; sourceTree = "<group>"; };
-		1F12EBFF1EB1497C00A0D735 /* EurekaDateTimeRow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaDateTimeRow.gif; sourceTree = "<group>"; };
-		1F12EC001EB1497C00A0D735 /* EurekaTimeInlineRow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaTimeInlineRow.gif; sourceTree = "<group>"; };
-		1F12EC011EB1497C00A0D735 /* EurekaTimePickerRow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaTimePickerRow.gif; sourceTree = "<group>"; };
-		1F12EC021EB1497C00A0D735 /* EurekaTimeRow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaTimeRow.gif; sourceTree = "<group>"; };
-		1F12EC041EB1497C00A0D735 /* ActionSheetRow.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ActionSheetRow.jpeg; sourceTree = "<group>"; };
-		1F12EC051EB1497C00A0D735 /* AlertRow.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AlertRow.jpeg; sourceTree = "<group>"; };
-		1F12EC061EB1497C00A0D735 /* ButtonRow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonRow.png; sourceTree = "<group>"; };
-		1F12EC071EB1497C00A0D735 /* CheckRow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckRow.png; sourceTree = "<group>"; };
-		1F12EC081EB1497C00A0D735 /* ImageRow.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ImageRow.jpeg; sourceTree = "<group>"; };
-		1F12EC091EB1497C00A0D735 /* LabelRow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelRow.png; sourceTree = "<group>"; };
-		1F12EC0A1EB1497C00A0D735 /* MultipleSelectorRow.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MultipleSelectorRow.jpeg; sourceTree = "<group>"; };
-		1F12EC0B1EB1497C00A0D735 /* PickerRow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PickerRow.png; sourceTree = "<group>"; };
-		1F12EC0C1EB1497C00A0D735 /* PictureRow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PictureRow.png; sourceTree = "<group>"; };
-		1F12EC0D1EB1497C00A0D735 /* PostalAddressRow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PostalAddressRow.png; sourceTree = "<group>"; };
-		1F12EC0E1EB1497C00A0D735 /* PushRow.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PushRow.jpeg; sourceTree = "<group>"; };
-		1F12EC0F1EB1497C00A0D735 /* SegmentedRow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SegmentedRow.png; sourceTree = "<group>"; };
-		1F12EC101EB1497C00A0D735 /* SegmentedRowWithTitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SegmentedRowWithTitle.png; sourceTree = "<group>"; };
-		1F12EC111EB1497C00A0D735 /* SliderRow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SliderRow.png; sourceTree = "<group>"; };
-		1F12EC121EB1497C00A0D735 /* StepperRow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StepperRow.png; sourceTree = "<group>"; };
-		1F12EC131EB1497C00A0D735 /* SwitchRow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SwitchRow.png; sourceTree = "<group>"; };
-		1F12EC141EB1497C00A0D735 /* TextAreaRow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextAreaRow.png; sourceTree = "<group>"; };
-		1F12EC161EB1497C00A0D735 /* FieldRowUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldRowUITests.swift; sourceTree = "<group>"; };
-		1F12EC171EB1497C00A0D735 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1F12EC581EB1498600A0D735 /* FloatLabelTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatLabelTextField.swift; sourceTree = "<group>"; };
-		1F8010981EAF39F700F8BBD3 /* ProfileControllerCardExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileControllerCardExt.swift; sourceTree = "<group>"; };
-		1F8010991EAF39F700F8BBD3 /* ProfileControllerCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileControllerCard.swift; sourceTree = "<group>"; };
+		1F12EBBE1EB03DE300A0D735 /* ProfileViewControllerExpanse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewControllerExpanse.swift; sourceTree = "<group>"; };
+		1F12EC5C1EB14D9B00A0D735 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1F12EC5E1EB153E300A0D735 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomCell.swift; path = ../../../Desktop/Link/Match/CustomCell.swift; sourceTree = "<group>"; };
+		1F8010981EAF39F700F8BBD3 /* ProfileControllerCardExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileControllerCardExt.swift; path = ../../../Desktop/Link/Match/ProfileControllerCardExt.swift; sourceTree = "<group>"; };
+		1F8010991EAF39F700F8BBD3 /* ProfileControllerCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileControllerCard.swift; path = ../../../Desktop/Link/Match/ProfileControllerCard.swift; sourceTree = "<group>"; };
 		1F88160C1EA52D3D004E9613 /* Social Point.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Social Point.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F88160F1EA52D3D004E9613 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F8816111EA52D3D004E9613 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -192,170 +62,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1F12EBCB1EB1497C00A0D735 /* Example */ = {
-			isa = PBXGroup;
-			children = (
-				1F12EBCC1EB1497C00A0D735 /* Example */,
-				1F12EBE41EB1497C00A0D735 /* Media */,
-				1F12EC151EB1497C00A0D735 /* UITests */,
-			);
-			path = Example;
-			sourceTree = "<group>";
-		};
-		1F12EBCC1EB1497C00A0D735 /* Example */ = {
-			isa = PBXGroup;
-			children = (
-				1F12EBCD1EB1497C00A0D735 /* AppDelegate.swift */,
-				1F12EBCE1EB1497C00A0D735 /* Assets.xcassets */,
-				1F12EBCF1EB1497C00A0D735 /* EurekaSectionHeader.xib */,
-				1F12EBD11EB1497C00A0D735 /* LaunchScreen.storyboard */,
-				1F12EBD31EB1497C00A0D735 /* Main.storyboard */,
-				1F12EBD51EB1497C00A0D735 /* WeekDaysCell.xib */,
-				1F12EBD71EB1497C00A0D735 /* CustomCells.swift */,
-				1F12EBD81EB1497C00A0D735 /* CustomDesign */,
-				1F12EBDC1EB1497C00A0D735 /* CustomRows */,
-				1F12EBE01EB1497C00A0D735 /* Helpers */,
-				1F12EBE21EB1497C00A0D735 /* Info.plist */,
-				1F12EBE31EB1497C00A0D735 /* SetupViewController.swift */,
-			);
-			path = Example;
-			sourceTree = "<group>";
-		};
-		1F12EBD81EB1497C00A0D735 /* CustomDesign */ = {
-			isa = PBXGroup;
-			children = (
-				1F12EBD91EB1497C00A0D735 /* DatePickerCell.xib */,
-				1F12EBDA1EB1497C00A0D735 /* SwitchCell.xib */,
-				1F12EBDB1EB1497C00A0D735 /* TextCell.xib */,
-			);
-			path = CustomDesign;
-			sourceTree = "<group>";
-		};
-		1F12EBDC1EB1497C00A0D735 /* CustomRows */ = {
-			isa = PBXGroup;
-			children = (
-				1F12EBDD1EB1497C00A0D735 /* ImageRow */,
-			);
-			path = CustomRows;
-			sourceTree = "<group>";
-		};
-		1F12EBDD1EB1497C00A0D735 /* ImageRow */ = {
-			isa = PBXGroup;
-			children = (
-				1F12EBDE1EB1497C00A0D735 /* ImagePickerController.swift */,
-				1F12EBDF1EB1497C00A0D735 /* ImageRow.swift */,
-			);
-			path = ImageRow;
-			sourceTree = "<group>";
-		};
-		1F12EBE01EB1497C00A0D735 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				1F12EBE11EB1497C00A0D735 /* FloatLabelTextField.swift */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
-		1F12EBE41EB1497C00A0D735 /* Media */ = {
-			isa = PBXGroup;
-			children = (
-				1F12EBE51EB1497C00A0D735 /* CatalogFieldRows.jpg */,
-				1F12EBE61EB1497C00A0D735 /* EurekaAlertRow.gif */,
-				1F12EBE71EB1497C00A0D735 /* EurekaCustomCellDisabled.gif */,
-				1F12EBE81EB1497C00A0D735 /* EurekaCustomCells.gif */,
-				1F12EBE91EB1497C00A0D735 /* EurekaCustomRow.gif */,
-				1F12EBEA1EB1497C00A0D735 /* EurekaExample1.gif */,
-				1F12EBEB1EB1497C00A0D735 /* EurekaExample2.gif */,
-				1F12EBEC1EB1497C00A0D735 /* EurekaExample3.gif */,
-				1F12EBED1EB1497C00A0D735 /* EurekaHidden.gif */,
-				1F12EBEE1EB1497C00A0D735 /* EurekaHowTo.gif */,
-				1F12EBEF1EB1497C00A0D735 /* EurekaLocationRow.gif */,
-				1F12EBF01EB1497C00A0D735 /* EurekaMultivalued.gif */,
-				1F12EBF11EB1497C00A0D735 /* EurekaNavigation.gif */,
-				1F12EBF21EB1497C00A0D735 /* EurekaOnChange.gif */,
-				1F12EBF31EB1497C00A0D735 /* EurekaRows.gif */,
-				1F12EBF41EB1497C00A0D735 /* EurekaSegmentedRow.gif */,
-				1F12EBF51EB1497C00A0D735 /* EurekaSwitchSections.gif */,
-				1F12EBF61EB1497C00A0D735 /* RowGifs */,
-				1F12EC031EB1497C00A0D735 /* RowStatics */,
-			);
-			path = Media;
-			sourceTree = "<group>";
-		};
-		1F12EBF61EB1497C00A0D735 /* RowGifs */ = {
-			isa = PBXGroup;
-			children = (
-				1F12EBF71EB1497C00A0D735 /* EurekaCountDownInlineRow.gif */,
-				1F12EBF81EB1497C00A0D735 /* EurekaCountDownPickerRow.gif */,
-				1F12EBF91EB1497C00A0D735 /* EurekaCountDownRow.gif */,
-				1F12EBFA1EB1497C00A0D735 /* EurekaDateInlineRow.gif */,
-				1F12EBFB1EB1497C00A0D735 /* EurekaDatePickerRow.gif */,
-				1F12EBFC1EB1497C00A0D735 /* EurekaDateRow.gif */,
-				1F12EBFD1EB1497C00A0D735 /* EurekaDateTimeInlineRow.gif */,
-				1F12EBFE1EB1497C00A0D735 /* EurekaDateTimePickerRow.gif */,
-				1F12EBFF1EB1497C00A0D735 /* EurekaDateTimeRow.gif */,
-				1F12EC001EB1497C00A0D735 /* EurekaTimeInlineRow.gif */,
-				1F12EC011EB1497C00A0D735 /* EurekaTimePickerRow.gif */,
-				1F12EC021EB1497C00A0D735 /* EurekaTimeRow.gif */,
-			);
-			path = RowGifs;
-			sourceTree = "<group>";
-		};
-		1F12EC031EB1497C00A0D735 /* RowStatics */ = {
-			isa = PBXGroup;
-			children = (
-				1F12EC041EB1497C00A0D735 /* ActionSheetRow.jpeg */,
-				1F12EC051EB1497C00A0D735 /* AlertRow.jpeg */,
-				1F12EC061EB1497C00A0D735 /* ButtonRow.png */,
-				1F12EC071EB1497C00A0D735 /* CheckRow.png */,
-				1F12EC081EB1497C00A0D735 /* ImageRow.jpeg */,
-				1F12EC091EB1497C00A0D735 /* LabelRow.png */,
-				1F12EC0A1EB1497C00A0D735 /* MultipleSelectorRow.jpeg */,
-				1F12EC0B1EB1497C00A0D735 /* PickerRow.png */,
-				1F12EC0C1EB1497C00A0D735 /* PictureRow.png */,
-				1F12EC0D1EB1497C00A0D735 /* PostalAddressRow.png */,
-				1F12EC0E1EB1497C00A0D735 /* PushRow.jpeg */,
-				1F12EC0F1EB1497C00A0D735 /* SegmentedRow.png */,
-				1F12EC101EB1497C00A0D735 /* SegmentedRowWithTitle.png */,
-				1F12EC111EB1497C00A0D735 /* SliderRow.png */,
-				1F12EC121EB1497C00A0D735 /* StepperRow.png */,
-				1F12EC131EB1497C00A0D735 /* SwitchRow.png */,
-				1F12EC141EB1497C00A0D735 /* TextAreaRow.png */,
-			);
-			path = RowStatics;
-			sourceTree = "<group>";
-		};
-		1F12EC151EB1497C00A0D735 /* UITests */ = {
-			isa = PBXGroup;
-			children = (
-				1F12EC161EB1497C00A0D735 /* FieldRowUITests.swift */,
-				1F12EC171EB1497C00A0D735 /* Info.plist */,
-			);
-			path = UITests;
-			sourceTree = "<group>";
-		};
-		1F12EC571EB1498600A0D735 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				1F12EC581EB1498600A0D735 /* FloatLabelTextField.swift */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
-		1F80109B1EAF39F700F8BBD3 /* LEFT VIEWS */ = {
-			isa = PBXGroup;
-			children = (
-				1F12EBC91EB148D400A0D735 /* SetupViewController.swift */,
-				1F8010981EAF39F700F8BBD3 /* ProfileControllerCardExt.swift */,
-				1F12EBBE1EB03DE300A0D735 /* ProfileViewControllerExpanse.swift */,
-				1F8010991EAF39F700F8BBD3 /* ProfileControllerCard.swift */,
-				1F12EBC21EB045E100A0D735 /* CardCollectionViewCell.swift */,
-				1F12EBC31EB045E100A0D735 /* CardCollectionViewCell.xib */,
-			);
-			name = "LEFT VIEWS";
-			path = ../../../Desktop/Link/Match;
-			sourceTree = "<group>";
-		};
 		1F8816031EA52D3D004E9613 = {
 			isa = PBXGroup;
 			children = (
@@ -389,11 +95,13 @@
 		1F8816251EA53F9B004E9613 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1F12EC571EB1498600A0D735 /* Helpers */,
-				1F12EBCB1EB1497C00A0D735 /* Example */,
-				1F80109B1EAF39F700F8BBD3 /* LEFT VIEWS */,
+				1F12EBBE1EB03DE300A0D735 /* ProfileViewControllerExpanse.swift */,
+				1F8010991EAF39F700F8BBD3 /* ProfileControllerCard.swift */,
+				1F8010981EAF39F700F8BBD3 /* ProfileControllerCardExt.swift */,
 				1F11A4651EA7D043000424D8 /* DeckViewController.swift */,
 				1F8816111EA52D3D004E9613 /* LoginViewController.swift */,
+				1F12EC5C1EB14D9B00A0D735 /* HomeViewController.swift */,
+				1F12EC5E1EB153E300A0D735 /* CustomCell.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -518,67 +226,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F12EC311EB1497C00A0D735 /* EurekaLocationRow.gif in Resources */,
-				1F12EC2C1EB1497C00A0D735 /* EurekaExample1.gif in Resources */,
-				1F12EC331EB1497C00A0D735 /* EurekaNavigation.gif in Resources */,
-				1F12EC301EB1497C00A0D735 /* EurekaHowTo.gif in Resources */,
-				1F12EC4E1EB1497C00A0D735 /* PushRow.jpeg in Resources */,
 				1F88161A1EA52D3D004E9613 /* LaunchScreen.storyboard in Resources */,
-				1F12EC501EB1497C00A0D735 /* SegmentedRowWithTitle.png in Resources */,
-				1F12EC451EB1497C00A0D735 /* AlertRow.jpeg in Resources */,
-				1F12EC461EB1497C00A0D735 /* ButtonRow.png in Resources */,
-				1F12EC471EB1497C00A0D735 /* CheckRow.png in Resources */,
-				1F12EC1F1EB1497C00A0D735 /* DatePickerCell.xib in Resources */,
-				1F12EC4F1EB1497C00A0D735 /* SegmentedRow.png in Resources */,
-				1F12EC3F1EB1497C00A0D735 /* EurekaDateTimePickerRow.gif in Resources */,
-				1F12EC411EB1497C00A0D735 /* EurekaTimeInlineRow.gif in Resources */,
-				1F12EC431EB1497C00A0D735 /* EurekaTimeRow.gif in Resources */,
-				1F12EC3A1EB1497C00A0D735 /* EurekaCountDownRow.gif in Resources */,
-				1F12EC521EB1497C00A0D735 /* StepperRow.png in Resources */,
-				1F12EC2B1EB1497C00A0D735 /* EurekaCustomRow.gif in Resources */,
-				1F12EC2E1EB1497C00A0D735 /* EurekaExample3.gif in Resources */,
-				1F12EC1B1EB1497C00A0D735 /* LaunchScreen.storyboard in Resources */,
-				1F12EC541EB1497C00A0D735 /* TextAreaRow.png in Resources */,
-				1F12EC401EB1497C00A0D735 /* EurekaDateTimeRow.gif in Resources */,
-				1F12EC291EB1497C00A0D735 /* EurekaCustomCellDisabled.gif in Resources */,
-				1F12EC371EB1497C00A0D735 /* EurekaSwitchSections.gif in Resources */,
-				1F12EC4A1EB1497C00A0D735 /* MultipleSelectorRow.jpeg in Resources */,
-				1F12EC3C1EB1497C00A0D735 /* EurekaDatePickerRow.gif in Resources */,
-				1F12EC4C1EB1497C00A0D735 /* PictureRow.png in Resources */,
-				1F12EC281EB1497C00A0D735 /* EurekaAlertRow.gif in Resources */,
-				1F12EBC51EB045E100A0D735 /* CardCollectionViewCell.xib in Resources */,
-				1F12EC2D1EB1497C00A0D735 /* EurekaExample2.gif in Resources */,
 				1F8816171EA52D3D004E9613 /* Assets.xcassets in Resources */,
-				1F12EC201EB1497C00A0D735 /* SwitchCell.xib in Resources */,
-				1F12EC251EB1497C00A0D735 /* Info.plist in Resources */,
-				1F12EC4B1EB1497C00A0D735 /* PickerRow.png in Resources */,
-				1F12EC211EB1497C00A0D735 /* TextCell.xib in Resources */,
 				1F8816151EA52D3D004E9613 /* Main.storyboard in Resources */,
-				1F12EC481EB1497C00A0D735 /* ImageRow.jpeg in Resources */,
-				1F12EC191EB1497C00A0D735 /* Assets.xcassets in Resources */,
-				1F12EC1C1EB1497C00A0D735 /* Main.storyboard in Resources */,
-				1F12EC3B1EB1497C00A0D735 /* EurekaDateInlineRow.gif in Resources */,
-				1F12EC421EB1497C00A0D735 /* EurekaTimePickerRow.gif in Resources */,
-				1F12EC381EB1497C00A0D735 /* EurekaCountDownInlineRow.gif in Resources */,
-				1F12EC351EB1497C00A0D735 /* EurekaRows.gif in Resources */,
-				1F12EC271EB1497C00A0D735 /* CatalogFieldRows.jpg in Resources */,
-				1F12EC2A1EB1497C00A0D735 /* EurekaCustomCells.gif in Resources */,
-				1F12EC1A1EB1497C00A0D735 /* EurekaSectionHeader.xib in Resources */,
-				1F12EC391EB1497C00A0D735 /* EurekaCountDownPickerRow.gif in Resources */,
-				1F12EC3E1EB1497C00A0D735 /* EurekaDateTimeInlineRow.gif in Resources */,
-				1F12EC491EB1497C00A0D735 /* LabelRow.png in Resources */,
-				1F12EC561EB1497C00A0D735 /* Info.plist in Resources */,
-				1F12EC321EB1497C00A0D735 /* EurekaMultivalued.gif in Resources */,
-				1F12EC2F1EB1497C00A0D735 /* EurekaHidden.gif in Resources */,
-				1F12EC441EB1497C00A0D735 /* ActionSheetRow.jpeg in Resources */,
-				1F12EC531EB1497C00A0D735 /* SwitchRow.png in Resources */,
-				1F12EC1D1EB1497C00A0D735 /* WeekDaysCell.xib in Resources */,
-				1F12EC341EB1497C00A0D735 /* EurekaOnChange.gif in Resources */,
-				1F12EC511EB1497C00A0D735 /* SliderRow.png in Resources */,
-				1F12EC3D1EB1497C00A0D735 /* EurekaDateRow.gif in Resources */,
-				1F12EC4D1EB1497C00A0D735 /* PostalAddressRow.png in Resources */,
 				1F88162D1EA54421004E9613 /* GoogleService-Info.plist in Resources */,
-				1F12EC361EB1497C00A0D735 /* EurekaSegmentedRow.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,63 +303,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F88162B1EA54117004E9613 /* LoginExtensions.swift in Sources */,
-				1F12EC241EB1497C00A0D735 /* FloatLabelTextField.swift in Sources */,
+				1F12EC5F1EB153E300A0D735 /* CustomCell.swift in Sources */,
 				1F12EBBF1EB03DE300A0D735 /* ProfileViewControllerExpanse.swift in Sources */,
-				1F12EC591EB1498600A0D735 /* FloatLabelTextField.swift in Sources */,
-				1F12EC551EB1497C00A0D735 /* FieldRowUITests.swift in Sources */,
 				1F80109C1EAF39F700F8BBD3 /* ProfileControllerCardExt.swift in Sources */,
-				1F12EBC41EB045E100A0D735 /* CardCollectionViewCell.swift in Sources */,
-				1F12EC231EB1497C00A0D735 /* ImageRow.swift in Sources */,
-				1F12EBCA1EB148D400A0D735 /* SetupViewController.swift in Sources */,
 				1F8816241EA53F93004E9613 /* User.swift in Sources */,
 				1F11A4681EA7D365000424D8 /* SocialCard.swift in Sources */,
-				1F12EC221EB1497C00A0D735 /* ImagePickerController.swift in Sources */,
 				1F80109D1EAF39F700F8BBD3 /* ProfileControllerCard.swift in Sources */,
-				1F12EC181EB1497C00A0D735 /* AppDelegate.swift in Sources */,
 				1F8816121EA52D3D004E9613 /* LoginViewController.swift in Sources */,
-				1F12EC1E1EB1497C00A0D735 /* CustomCells.swift in Sources */,
 				1F8816221EA53DEE004E9613 /* Extensions.swift in Sources */,
 				1F8816101EA52D3D004E9613 /* AppDelegate.swift in Sources */,
-				1F12EC261EB1497C00A0D735 /* SetupViewController.swift in Sources */,
 				1F11A4661EA7D043000424D8 /* DeckViewController.swift in Sources */,
+				1F12EC5D1EB14D9B00A0D735 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1F12EBCF1EB1497C00A0D735 /* EurekaSectionHeader.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1F12EBD01EB1497C00A0D735 /* Base */,
-			);
-			name = EurekaSectionHeader.xib;
-			sourceTree = "<group>";
-		};
-		1F12EBD11EB1497C00A0D735 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1F12EBD21EB1497C00A0D735 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		1F12EBD31EB1497C00A0D735 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1F12EBD41EB1497C00A0D735 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1F12EBD51EB1497C00A0D735 /* WeekDaysCell.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1F12EBD61EB1497C00A0D735 /* Base */,
-			);
-			name = WeekDaysCell.xib;
-			sourceTree = "<group>";
-		};
 		1F8816131EA52D3D004E9613 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
