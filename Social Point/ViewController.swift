@@ -92,7 +92,8 @@ extension ViewController: PaperOnboardingDataSource, PaperOnboardingDelegate {
         let font = UIFont (name: "AppleColorEmoji", size: 24)
         let titleFont = UIFont(name: "AmericanTypewriter-Bold", size: 30)
         let white = UIColor.white
-        let black = UIColor.black
+        let gray = UIColor.lightGray
+        let darkGray = UIColor.darkGray
         let royalPurple = UIColor.rgb(119, green: 0, blue: 255)
         let rookieBronze = UIColor.rgb(201, green: 144, blue: 91)
         let dietyGold = UIColor.rgb(246, green: 230, blue: 0)
@@ -101,9 +102,9 @@ extension ViewController: PaperOnboardingDataSource, PaperOnboardingDelegate {
         
         return [
             ("Kadeem Card", "Newbie", "I am the recipe to successs", "Black Deck", white, rookieBronze, rookieBronze, titleFont, font),
-            ("Madhur Card", "Royal", "Design Code and Ship", "Black Deck", white, royalPurple, royalPurple, titleFont, font),
-            ("Marq Card", "Diety", "I'm Super Official", "Deck", UIColor.lightGray, dietyGold, dietyGold, titleFont, font),
-            ("Verified Card", "Verified", "Drake is a Canadian Actor, rapper and singer.", "Black Deck", white, verifiedGreen, verifiedGreen, titleFont, font),
+            ("Madhur Card", "Royal", "Design Code and Ship", "Black Deck", gray, royalPurple, royalPurple, titleFont, font),
+            ("Marq Card", "Deity", "I'm Super Official", "Deck", darkGray, dietyGold, dietyGold, titleFont, font),
+            ("Verified Card", "Verified", "Drake is a Canadian Actor, rapper and singer.", "Black Deck", gray, verifiedGreen, verifiedGreen, titleFont, font),
             ("Verified Rihanna", "Verified", "Get #ANTI: http://smarturl.it/daANTI", "Black Deck", white, verifiedGreen, verifiedGreen, titleFont, font)
             ][index] as! OnboardingItemInfo
     }
